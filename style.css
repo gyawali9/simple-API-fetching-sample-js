@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-align: center;
+  background-color: lightblue;
+  text-shadow: hoff voff blur #000;
+  text-transform: capitalize;
+}
+.posts {
+  text-align: center;
+  padding: 2rem;
+}
+.posts:nth-child(even) {
+  background: grey;
+}
+.title {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+  font-family: serif;
+  font-size: 18px;
+  text-align: start;
+}
