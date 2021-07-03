@@ -1,4 +1,4 @@
-fetch("https:jsonplaceholder.typicode.com/posts")
+fetch("https:jsonplaceholder.typicode.com/postss")
   .then(function (response) {
     return response.json();
   })
@@ -21,4 +21,10 @@ fetch("https:jsonplaceholder.typicode.com/posts")
 
       document.body.appendChild(postdiv);
     });
+  })
+  .catch(function (error) {
+    let errorText = document.createElement("h1");
+    errorText.innerText = "Could not fetch data...";
+    errorText.classList.add("error-text");
+    document.body.appendChild(errorText);
   });
