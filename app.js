@@ -1,4 +1,4 @@
-fetch("https:jsonplaceholder.typicode.com/postss")
+fetch("https:jsonplaceholder.typicode.com/posts")
   .then(function (response) {
     return response.json();
   })
